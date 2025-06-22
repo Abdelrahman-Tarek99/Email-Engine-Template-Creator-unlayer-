@@ -99,7 +99,7 @@ const MyEmailEditor: React.FC = () => {
 
     const name = templateName.trim() || `Template ${Date.now()}`;
 
-    editor.saveDesign((design) => {
+    editor.saveDesign((design: any) => {
       const newTemplate: SavedTemplate = {
         id: currentTemplateId || `template_${Date.now()}`,
         name: name,
