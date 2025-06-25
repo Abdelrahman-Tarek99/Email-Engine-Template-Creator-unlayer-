@@ -81,7 +81,7 @@ const MyEmailEditor: React.FC = () => {
             height: "100vh",
           }}
           options={{
-            version: '1.157.0', // Use older version that supports registerCallback in free version
+            version: '1.259.0', // Test newer version
             mergeTags: mergeTags.reduce((acc, tag) => {
               acc[tag.name] = {
                 name: tag.name,

@@ -4,8 +4,8 @@ import type { SavedTemplate, MergeTag, UnlayerFile, UnlayerAPI } from "../types/
 
 export const useEmailEditor = () => {
   const editorRef = useRef<EditorRef>(null);
-  const [fromEmail, setFromEmail] = useState("");
-  const [testEmails, setTestEmails] = useState("");
+  const [fromEmail, setFromEmail] = useState("from@gmail.com");
+  const [testEmails, setTestEmails] = useState("to@gmail.com");
   const [isLoading, setIsLoading] = useState(false);
   const [savedTemplates, setSavedTemplates] = useState<SavedTemplate[]>([]);
   const [showTemplateManager, setShowTemplateManager] = useState(false);
