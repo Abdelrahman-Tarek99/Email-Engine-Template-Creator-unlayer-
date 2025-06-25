@@ -337,8 +337,8 @@ export const useEmailEditor = () => {
 
     console.log("Loading template with base64 images:", template);
     
-    // Load the design which should already have base64 images
-    editor.loadDesign(template.design as Record<string, unknown>);
+    
+    editor.loadDesign(template.design as any);
     setCurrentTemplateId(template.id);
     setTemplateName(template.name);
     setShowTemplateManager(false);
